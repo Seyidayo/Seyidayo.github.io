@@ -1,0 +1,20 @@
+html {
+  font-size: 1rem;
+}
+
+header,
+section,
+p {
+  margin-block-end: 2em;
+}
+aside {
+  display: none;
+}
+
+body {
+  padding: 1em;
+}
+
+p {
+  inline-size: 100%;
+}

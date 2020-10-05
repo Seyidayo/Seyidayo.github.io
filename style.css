@@ -1,0 +1,73 @@
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100px 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  min-block-size: 700px;
+  block-size: 100vh;
+  overflow: hidden;
+}
+
+p {
+  inline-size: 70%;
+}
+
+body > * {
+  padding: 1.25em;
+}
+
+aside,
+header {
+  border-right: var(--border-size) var(--foreground-color) solid;
+}
+
+aside {
+  writing-mode: vertical-lr;
+}
+
+aside div {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside div h3 {
+  transform: rotate(180deg);
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+}
+
+main {
+  position: relative;
+}
+
+main section {
+  margin-block-start: 4em;
+}
+
+main section h3 {
+  margin-block-end: 1rem;
+}
+
+main .socials {
+  position: absolute;
+  bottom: 1.5em;
+}
+
+.button-effect {
+  block-size: 250px;
+  width: 100%;
+  border: solid var(--border-size) var(--foreground-color);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 2px 4px rgba(0, 0, 0, 0.2);
+}

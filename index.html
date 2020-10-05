@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 800px)"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 799px)"
+      href="style-mobile.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Faith Idowu - Landing page</title>
+    <style>
+      :root {
+        --background-color: #fff;
+        --foreground-color: #000;
+        --text-font: "Epilogue", sans-serif;
+        --border-size: 1.5px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #000;
+          --foreground-color: #fff;
+        }
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: var(--text-font);
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+      }
+
+      a {
+        color: var(--foreground-color);
+        text-decoration-thickness: 2px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-size: 1.75rem;
+        line-height: 1.25em;
+      }
+
+      p {
+        line-height: 1.75em;
+      }
+
+      ul {
+        margin-inline-start: 1em;
+      }
+
+      ul li {
+        margin-block-start: 0.5em;
+        white-space: nowrap;
+      }
+
+      main .socials {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        list-style: none;
+      }
+
+      main .socials li {
+        margin-inline-end: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <div>
+        <div class="button-effect"></div>
+        <h3>Faith Idowu - Landing Page</h3>
+      </div>
+    </aside>
+    <header>
+      <div class="button-effect">
+        <h1>
+          Faith Idowu, <br />
+          Software developer.
+        </h1>
+        <h2>
+          Currently working with <a href="https:/pettysave.com">Pettysave.</a>
+        </h2>
+      </div>
+    </header>
+    <main>
+      <p>
+        Hi There, my name is Faith <br />
+        I am a Software developer passionate about creating the best possible
+        experience for the user in any way I can,
+      </p>
+      <br />
+      <p>
+        I started this journey in 2018 and it's been a joyful ride, I've stuck
+        with building UI/frontend development, I started helping friends with
+        there projects so I can learn more.
+      </p>
+      <br />
+      <p>
+        Currently I work with Vue and NuxtJS, and I'm learning about how to
+        create performant and accessible applications, you can see my progress
+        on <a href="https://github.com/seyidayo">Github</a>,
+        <i>I'll try my best to document my progress too</i>.
+      </p>
+      <section>
+        <h3>Highlights</h3>
+
+        <ul>
+          <li>
+            <a href="https://rapidpay.africa"
+              >Frontend Mentor Conversions(HTML/CSS)</a
+            >
+          </li>
+          <li>
+            <a href="https://faithidowu.netlify.app">Portfolio(Gridsome)</a>
+          </li>
+          <li><a href="https://rapidpay.africa">RapidPay V1(NextJS)</a></li>
+          <li><a href="https://fuudzie.com/">Fuudzie V1(NuxtJs)</a></li>
+          <li><a href="https://goodtalent.io/">GoodTalent V1(NuxtJs)</a></li>
+        </ul>
+      </section>
+
+      <ul class="socials">
+        <li><a href="https://github.com/seyidayo">Github</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/faithidowu/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/faithidowu_">Twitter</a>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/document/d/14aiG74XhxphzfW3ytktAowyGHGGeg4iQRl0V34OjfWA/edit?usp=sharing
+            "
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      defer
+    ></script>
+  </body>
+</html>
