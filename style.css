@@ -8,7 +8,6 @@ body {
   grid-template-rows: 1fr;
   min-block-size: 700px;
   block-size: 100vh;
-  overflow: hidden;
 }
 
 p {
@@ -44,6 +43,7 @@ header {
 
 main {
   position: relative;
+  overflow-y: auto;
 }
 
 main section {
@@ -54,9 +54,11 @@ main section h3 {
   margin-block-end: 1rem;
 }
 
-main .socials {
-  position: absolute;
-  bottom: 1.5em;
+@media screen and (min-width: 1640px) {
+  main .socials {
+    position: absolute;
+    bottom: 1.5em;
+  }
 }
 
 .button-effect {
