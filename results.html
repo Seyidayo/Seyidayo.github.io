@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+
+<body>
+  <main id="root"></main>
+
+  <script type="module" async>
+    const rootElement = document.getElementById('root');
+    const links = await fetch('data.json')
+      .then((response) => response.json())
+      .then((data) => {
+        return data;
+      });
+
+    links.forEach((link) => {
+      const structure = `
+        <a class="grid-item" href="${link.link}">
+          <article>
+            <h2 class="grid-item__text">${link.title}</h2>  
+          </article>
+        </a>
+      `;
+      const fragment = document
+        .createRange()
+        .createContextualFragment(structure);
+      rootElement.appendChild(fragment);
+    });
+  </script>
+</body>
+
+</html>
